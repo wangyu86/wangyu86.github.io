@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 48px;
+}
+ul{
+    list-style: none;
+}
+/* 对头部 底部 中部进行通用样式 */
+#head,
+#footer,
+#main{
+    height: 100px;
+    width: 1200px;
+    background: #515151;
+    line-height: 100px;
+    margin: 0 auto;
+    min-width: 320px;
+}
+/*单独设置中部 */
+#main{
+    height: auto;
+    margin: 10px auto;
+    overflow: hidden;
+    display: flex;
+}
+/* 对左侧 中间 右侧进行设置 */
+.left,
+.middle,
+.right{
+    height: 600px;
+    line-height: 600px;
+    width: 20%;
+    background: chartreuse;
+}
+/* 对中间单独设置 */
+.middle{
+    width: 60%;
+    border-left: 10px solid white;
+    border-right: 10px solid white;
+}
+/* 对头部信息设置样式 */
+#head ul .logo{
+    background: url("../images/logo.png")no-repeat;
+    background-size: 100% 100%;
+    height:60px;
+    margin: 0;
+    /* margin-top: -20px; */
+}
+#head{
+    overflow: hidden;
+}
+#head ul{
+    display: flex;
+    height: 60px;
+    margin-top: 20px;
+}
+#head ul li{
+    justify-items: center;
+   width: 20%;
+   height: 60px;
+   background: #515151;
+   color: white;
+   line-height: 60px;
+   font-size: 20px;
+   text-align: center;
+}
+@media  screen and (max-width:1200px){
+    #head,
+    #main,
+    #footer{
+        width: 100%;
+    }
+}
+@media  screen and (max-width:980px){
+    
+    .right{
+        display: none;
+
+    }
+    .left{
+        width: 30%;
+    }
+    .middle{
+        width: 70%;
+        border-right: hidden;
+    }
+}
+@media  screen and (max-width:640px){
+  
+    #main{
+        flex-direction: column;
+    }
+    .right,
+    .middle,
+    .left{
+        width: 100%;
+        height: 200px;
+        line-height: 200px;
+        display: block;
+    }
+    .middle{
+        border: none;
+        border-top: 10px solid white;
+        border-bottom: 10px solid white;
+        height: 600px;
+        line-height: 600px;
+    }
+}

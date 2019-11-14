@@ -1,0 +1,503 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 10px;
+}
+body{
+    background: #eeeeee;
+}
+a{
+    list-style: none;
+    text-decoration: none;
+   
+}
+ul{
+    list-style: none;
+}
+ul,li{
+    margin: 0;
+    padding: 0;
+}
+.promotional_top{
+    width: 1280px;
+    height:8rem;
+    background: red;
+    background: url("../images/50.jpg")no-repeat;
+    background-size: 100% 100%;
+}
+.site-nav-bd{
+    width:1280px;
+    height:35px;
+    background:#cccccc;
+    margin: auto;
+}
+#header,
+#article,
+#footer{
+    width: 1280px;
+    height: 200px;
+    background:green;
+    margin: auto;
+    min-width: 320px;
+}
+#header{
+    height: auto;
+}
+#article{
+    height: 600px;
+    background: #515151;
+}
+/* 对导航设置样式 */
+
+.site-nav .site-nav-bad{
+   width: 100%;
+}
+.site-nav-bd>.site_nav_bd_l li{
+    margin-right: 27px;
+    float: left;
+    height: 3.5rem;
+    line-height: 3.5rem;
+    color: #6c6c6c;
+    font-size: 1.2rem;
+   
+   
+}
+.site-nav-bd>.site_nav_bd_l li a{
+    display: inline-block;
+    list-style: none;
+    text-decoration: none;
+    color: #6c6c6c;
+    height: 3.5rem;
+    line-height: 3.5rem;
+}
+ .site-nav-menu{
+    position: relative;
+    display: none;
+ 
+}
+.site-nav-menu .site-nav-menu-list{
+    position: absolute;
+    border: 1px solid #EEE;
+    border-top: none;
+    background: #fff;
+  
+}
+/* 给导航栏香港设置hover样式 */
+/* .site-nav-menu-hover:hover .site-nav-menu .site-nav-menu-list{
+    display: block;
+    cursor: progress!important;
+} */
+.site-nav-menu-hover:hover{
+     background: white;
+}
+.site-nav-menu-hover a:hover .site-nav-menu{
+   display:block;
+}
+.site-nav-menu-list li:hover{
+    background: #cccccc;
+}
+.site-nav-bd>.site_nav_bd_l li .site-nav-menu .site-nav-menu-list li{
+    width: 242px;
+    height: 29px;
+    line-height: 29px;
+    padding-left: 8px;
+    cursor: pointer;
+    color: black;
+}
+.site-nav-bd>.site_nav_bd_l li:nth-child(2) a{
+    color: #f22e00!important;
+    
+}
+/* 对导航右边设置样式 */
+.site-nav-bd>.site_nav_bd_r{
+    float: right;
+}
+.site-nav-bd>.site_nav_bd_r>li{
+    height: 35px;
+    height: 3.5rem;
+    line-height: 3.5rem;
+    line-height: 35px;
+    float: left;
+    margin-left: 20px;
+}
+.site-nav-bd>.site_nav_bd_r li a{
+    display: inline-block;
+    color: #6c6c6c;
+    font-size: 1.2rem;
+}
+
+/* 给导航栏我的淘宝设置样式 */
+.mytaobao{
+    width: 80px;
+}
+.mytaobao .mytaobao-d-l li a{
+    display: inline-block;
+    width: 80px;
+    height: 30px;
+    line-height: 30px;
+}
+.mytaobao:hover{
+    background: white;
+    
+}
+.mytaobao:hover .mytaobao-d{
+    display: block;
+    z-index: 999;
+}
+.mytaobao .mytaobao-d-l li a:hover{
+    background: #cccccc;
+   
+}
+
+.mytaobao-d{
+    position: relative;
+    clear: both;
+    display: none;
+}
+.mytaobao-d-l{
+    position: absolute;
+    background: white;
+   
+}
+.site-nav-bd>.site_nav_bd_r .mytaobao-d-l li{
+    margin-top: 8px;
+    width: 80x;
+   
+}
+.site-nav-bd>.site_nav_bd_r .mytaobao-d-l li a{
+  
+    color: black;
+    width: 80px;
+
+}
+.site-nav-bd>.site_nav_bd_r li:nth-child(3) .site-nav-icon-color{
+   color: #f40;
+}
+/* 对导航栏中设置hover样式 */
+.site-nav-bd>.site_nav_bd_l .site-nav-hover:hover{
+    color: #f40;
+}
+.site-nav-bd>.site_nav_bd_r li :hover{
+    color: #f40;
+}
+
+
+
+
+
+/**
+对头部进行样式设置
+
+*/
+
+#header .header-wrap{
+    width: 1280px;
+    margin: auto;
+    height: 87px;
+    background: #FF5000;
+    display: block;
+}
+/* 对左边Logo进行设置 */
+.header-wrap .logo{
+    float: left;
+    white-space: nowrap;
+    text-indent: -9999px;
+    display: block;
+    overflow: hidden;
+    width: 155px;
+    padding-top: 87PX;
+    background: url("../images/logo.png")no-repeat;
+    background-size: 155px 40px;
+    background-position: center center;
+}
+/* 对中间搜索区域进行设置 */
+.header-wrap .search{
+    float: left;
+    width: 626px;
+    height:87px;
+  
+    position: relative;
+    margin-left: 100px;
+}
+.top-search{
+    height: 4opx;
+    position: relative;
+}
+.top-search form{
+    position: relative;
+    box-sizing: border-box;
+    height: 100%;
+    overflow: hidden;
+}
+.top-search input[type=text]{
+    width: 100%;
+    height: 40px;
+    float: left;
+    background: white;
+    border: none;
+    outline: 0;
+    color: #333;
+    padding-left: 16px;
+    vertical-align: middle;
+    box-shadow: none;
+    border-radius: 2px;
+    font-size: 16px;
+    margin-top: 20px;
+    -webkit-appearance: none;
+}
+.top-search input[type=submit]{
+    background: url("../images/search.png") 50% 50% no-repeat;
+    height:24px;
+    width:24px;
+    background-size:24px 24px;
+  
+    color: transparent;
+    box-sizing: initial;
+   outline: medium;
+   border: none;
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    top: 28px;
+    
+}
+/* 对搜索区域中sb-content样式设置 */
+
+.sb-content{
+    width: 100%;
+    height: 20px;
+    position: absolute;
+    bottom: 0;
+}
+.sb-content .sb-content-a{
+    margin-right: 10px;
+    color:rgba(255,255,255,.5) ;
+}
+.sb-content .sb-content-a:hover{
+    color: white;
+}
+.sb-content .sb-content-a:last-child{
+   position: absolute;
+   right: 0;
+}
+/* 对搜索栏右边进行设置 */
+    .user-info{
+        width: 219px;
+        height: 87px;
+        float: left;
+        position: relative;
+        margin-left: 10px;
+        cursor: pointer;
+       
+    }
+.user-info img{
+    display: inline-block;
+    position: absolute;
+    left: 22px;
+    top: 20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    background: red;
+}
+.user-info .user-info-login{
+    position: absolute;
+    left: 78px;
+    top: 20px;
+    width: 140px;
+    height: 24px;
+    color: white;
+    font-size: 16px;
+    
+}
+.user-info .user-info-login a{
+    color: white;
+}
+.user-info .user-info-login .line{
+    margin:0px 7px ;
+}
+.user-info .user-info-dq{
+    position: absolute;
+    left: 78px;
+    top: 50px;
+    line-height:24px ;
+    height: 24px;
+    background: #fff0e8;
+    color: #F40;
+    font-size: 12px;
+    font-weight: 200;
+    overflow: hidden;
+    vertical-align: middle;
+}
+.user-info .iconfont{
+    position: relative;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url(../images/48-48.png);
+    background-size: 100% 100%;
+    vertical-align: middle;
+}
+/* 对二维码进行设置 */
+.qrcode a{
+    display: inline-block;
+    width: 88px;
+    height: 87px;
+    position: relative;
+}
+ .qrcode .qrcode-icon{
+    display: inline-block;
+    position: absolute;
+    margin-left: 23px;
+    margin-top: 10px;
+    color:white;
+    font-size: 38px;
+}
+.qrcode{
+    position: relative;
+    float: left;
+    width: 85px;
+    height: 87px;
+  
+}
+.qrcode .qrcode-lite{
+    display: inline-block;
+    color: white;
+    position: absolute;
+    left: 28px;
+    top: 54px;
+}
+/* 对搜索栏中购物车样式设置 */
+/* .cart{
+    width: 60px;
+    height: 87px;
+    float: left;
+    background: mediumblue;
+    position: relative;
+} */
+ 
+
+/* 设置媒体查询 对不同设备的响应式样式 */
+/* 对头部最下面的导航栏设置样式 */
+#header .nav-bottom{
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    background: #fff;
+}
+.nav-bottom .nav-bottom-container{
+    width: 1280px;
+    height: 30px;
+    margin: auto;
+    background: khaki;
+}
+.nav-bottom h2{
+    float: left;
+    width: 190px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    color: #f40;
+    background: lawngreen;
+    margin-left: -154px;
+}
+.nav-bottom .nav-bottom-hb{
+   
+    
+    margin-left: 216px;
+}
+.nav-bottom ul li{
+    float: left;
+    margin-left: 30px;
+    margin-right: 10px;
+    padding: 0 5px;
+    font-weight: 700;
+    font-size: 12px;
+}
+
+.nav-bottom ul li a{
+    color: #f40;
+}
+.nav-bottom ul li a:hover{
+    color: #fff;
+}
+
+
+
+/* 给主体内容arcitlr设置样式 */
+
+#article{
+    width: 100%;
+}
+#article .article-wrap{
+    position: relative;
+    width: 1280px;
+    height: 600px;
+    background: #fff;
+    margin: auto;
+}
+#article .article-wrap .article-wrap-main{
+    position: absolute;
+    width: 780px;
+    height: 600px;
+    background: #FF5000;
+    margin-left: 190px;
+    margin-right: 200px;
+}
+#article .article-wrap .article-wrap-left{
+    width: 190px;
+    height: 600px;
+    float: left;
+    background: royalblue;
+}
+#article .article-wrap .article-wrap-right{
+    width: 290px;
+    height: 600px;
+    float: right;
+    background: yellowgreen;
+}
+/* 给article左边的列表设置样式 */
+.article-wrap-left ul li{
+    margin-top: 5px;
+    position: relative;
+    height: 32px;
+    line-height: 32px;
+}
+.article-wrap-left ul li a{
+    display: inline-block;
+    height: 32px;
+    line-height: 32px;
+    padding: 0 8px;
+    font-size: 13px;
+    color: black;
+}
+.article-wrap-left ul li span{
+    display: inline-block;
+    height: 32px;
+    line-height: 32px;
+    font-size: 13px;
+    position: absolute;
+    right: 3px;
+}
+.article-wrap-left ul li:hover{
+    background: red;
+   
+}
+.article-wrap-left ul a:hover{
+    color: yellow;
+}
+.article-wrap-left ul span:hover{
+    color: yellow;
+}
+@media screen and (min-width:1200px){
+    .promotional_top,
+    .site-nav,
+    #header,
+    #article,
+    #footer{
+        width: 100%;
+    }
+    
+}
